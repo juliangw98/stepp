@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Main Container */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header .logo-container {
+    flex: 1;
+    width: 50%; /* Logo width set to 50% */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.header .logo {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.header .address {
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+    text-align: right;
+    flex: 1;
+}
+
+/* Hero Image */
+.hero-image {
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+
+}
+
+.hero-image img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+/* Quote Section */
+.quote-section {
+    margin: 40px 0px 160px 0px;
+    max-width: 90%;
+    text-align: left;
+    color: #09003C;
+
+}
+
+.quote-section h1 {
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: px;
+    line-height: 1.1;
+    letter-spacing: -4px;
+}
+
+.quote-section p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Opening Hours */
+.opening-hours {
+    margin: 20px auto;
+    width: 90%;
+    background-color: #D0FDFF;
+    padding: 80px; /* Increased padding for desktop */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.opening-hours h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #09003C;
+    margin-bottom: 15px;
+}
+
+.opening-hours ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 600; /* Semi-bold */
+    color: #09003C;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(9, 0, 60, 0.1); /* 10% opacity */
+}
+
+.opening-hours .day {
+    text-align: left;
+}
+
+.opening-hours .hours {
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .opening-hours {
+        padding: 50px; /* Reduced padding for tablets */
+    }
+
+    .quote-section h1 {
+        font-size: 50px;
+    }
+
+    .quote-section p {
+        font-size: 14px;
+    }
+
+    .opening-hours h2 {
+        font-size: 30px;
+    }
+
+    .opening-hours li {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .opening-hours {
+        padding: 30px; /* Reduced padding for mobile */
+    }
+
+    .quote-section h1 {
+        font-size: 40px;
+    }
+
+    .quote-section p {
+        font-size: 12px;
+    }
+
+    .opening-hours li {
+        font-size: 20px;
+    }
+}
