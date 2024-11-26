@@ -16,6 +16,7 @@ main {
     padding: 20px 0;
     margin: 0 auto;
     width: 90%;
+    overflow: hidden;
 }
 
 /* Header */
@@ -23,9 +24,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    margin: 0 auto;
+    padding: 16px 0 0 0;
+        margin: 0 auto;
     width: 90%;
+    
 }
 
 .header .logo-container {
@@ -51,7 +53,7 @@ main {
 
 /* Hero Image */
 .hero-image {
-    margin: 20px auto;
+    margin: 0px auto;
     width: 100%;
     border-radius: 24px;
     overflow: hidden;
@@ -92,16 +94,17 @@ main {
 
 /* Opening Hours */
 .opening-hours {
-    margin: 20px auto;
     width: 90%;
     background-color: #D0FDFF;
-    padding: 80px; /* Increased padding for desktop */
+    padding: 40px; /* Increased padding for desktop */
     border-radius: 12px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .opening-hours h2 {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 600;
     color: #09003C;
     margin-bottom: 15px;
@@ -109,18 +112,21 @@ main {
 
 .opening-hours ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
     margin: 0;
+    padding: 0;
 }
 
 .opening-hours li {
     display: flex;
     justify-content: space-between;
-    font-size: 40px;
+    font-size:32px;
     font-weight: 600; /* Semi-bold */
     color: #09003C;
     padding: 10px 0;
     border-bottom: 1px solid rgba(9, 0, 60, 0.1); /* 10% opacity */
+    width:100%;
 }
 
 .opening-hours .day {
@@ -134,7 +140,7 @@ main {
 /* Responsive Design */
 @media (max-width: 768px) {
     .opening-hours {
-        padding: 50px; /* Reduced padding for tablets */
+        padding: 24px; /* Reduced padding for tablets */
     }
 
     .quote-section h1 {
@@ -156,7 +162,7 @@ main {
 
 @media (max-width: 480px) {
     .opening-hours {
-        padding: 30px; /* Reduced padding for mobile */
+        padding: 16px; /* Reduced padding for mobile */
     }
 
     .quote-section h1 {
@@ -168,6 +174,6 @@ main {
     }
 
     .opening-hours li {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
